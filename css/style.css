@@ -1,0 +1,334 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden!important;
+  }
+body{
+  position: relative;
+  overflow-x: hidden!important;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  font-family: "Sofia", cursive;
+}
+h1 {
+  font-family: "Sofia", cursive;
+  font-size: 6rem;
+  margin-bottom: 60px;
+  text-align: center;
+}
+#skill h1 , #contact h1 {
+  color: #fff;
+}
+p {
+  font-family: serif;
+}
+/* ヘッダー */
+.header-contents {
+  width: 100%;
+  height: 80px;
+  background-color: #000055;
+  z-index: 99;
+  display: flex;
+  position: fixed;
+  top: 0px;
+  animation: fadeIn 8s ease 2s 1 normal;
+  left: 0px;
+  opacity: 0.7;
+}
+nav#humburger {
+  margin: auto 0px auto auto;
+  overflow-x: hidden!important;
+}
+nav#humburger li {
+  margin-right: 56px;
+  overflow-x: hidden!important;
+}
+.header-content {
+  width: 100%;
+  margin: auto 0 auto auto;
+  display: flex;
+}
+.header-content a {
+  margin-left: 4%;
+  font-size: 3.2rem;
+  color: #fff;
+}
+
+@keyframes fadeIn { /*animetion-nameで設定した値を書く*/
+
+  0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+
+  100% {opacity: 0.6} /*アニメーション終了時は不透明度100%*/
+
+}
+.header-contents img {
+  margin: 12px 32px;
+}
+.header-contents > a {
+  font-size: 3.2rem;
+  font-family: cursive;
+}
+
+/* ホーム */
+#top {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../image/home-bgc.jpg);
+    background-repeat: no-repeat;
+    padding: 278px 0;
+}
+  #top p {
+    text-align: center;
+    transform: rotate(-10deg);
+    font-family: serif;
+  }
+  .name {
+      font-size: 18.4rem;
+      text-shadow: -5px -6px 7px #40E0D0;
+      margin-bottom: 32px;
+  }
+  .sen {
+    font-size: 7.2rem;
+    text-shadow: -3px -4px 5px #40E0D0;
+ }
+
+/* プロファイル */
+ #profile {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    padding: 60px 50px 60px;
+    background-image: url(../image/marble.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0 0 10px black);
+}
+.profile-contents {
+  width: 88%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.my-photo {
+  height: 700px;
+  padding: 0 50px;
+}
+.back-my-photo {
+  width: 364px;
+  height: 364px;
+  transform: rotate(-45deg);
+  margin-top: 22%;
+  background: rgba(0,51,102,0.7);
+}
+.photo-content {
+  width: 356px;
+  height: 356px;
+  border-radius: 50%;
+  transform: rotate(+45deg);
+  margin: 4px;
+}
+.twitter {
+  width: 100%;
+  height: 24px;
+  text-align: center;
+  font-size: 28px;
+  margin-top: 96px;
+}
+.introduce {
+  width: 44%;
+  height: auto;
+}
+.intro-contents {
+  margin-top: 32px;
+}
+.intro-contents p {
+  margin: 12px 0;
+  font-size: 24px;
+}
+.profile-top {
+  font-size: 32px;
+}
+.border {
+  border: 1px solid #003366;
+  margin: 16px 0;
+}
+.intro-content {
+  margin: 40px 0 !important;
+}
+/* スキル */
+#skill {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  background: none;
+  padding: 60px 50px 100px;
+  background-image: url(../image/mountain.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-backface-visibility:hidden;
+ backface-visibility:hidden;
+  filter: drop-shadow(0 0 10px black);
+}
+.skill-contents {
+  width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.skill-contents p{
+  font-size: 24px;
+  margin: 30px;
+  font-family: serif;
+}
+.skill-contents img {
+  width: 160px;
+  height: 160px;
+  margin-top: 16%;
+}
+.icon1 , .icon2 , .icon3 , .icon4 , .icon5 , .icon6 {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  background-color: #fff;
+  margin: 0% 4% 6%; 
+  border-radius: 40px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+}
+/* ポートフォリオ */
+#portfolio {
+  width: 100%;
+    height: auto;
+    z-index: 1;
+    padding: 60px 50px 150px;
+    background-image: url(../image/marble.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0 0 10px black);
+}
+.works-list {
+  width: 100%;
+  height: auto;
+  padding: 4% 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.work-detail {
+  width: 550px;
+  height: 350px;
+  position: absolute;
+  top: 350px;
+  padding: 24px;
+  font-size: 3.2rem;
+  text-align: center;
+  background-image: url(../image/port-back.jpg);
+  opacity: 0.8;
+}
+.work-detail p{
+  margin-top: 14%;
+  color: #222222;
+  text-shadow: 3px 3px 0 #fff;
+}
+.coffee-all {
+  width: 24%;
+}
+.original-site {
+  width: 550px;
+  height: 350px;
+  position: relative;
+  overflow:hidden;
+}
+.work-coffee , .work-rice {
+  width: 550px;
+  height: auto;
+}
+.port-tag {
+  font-size: 2.4rem;
+  border-bottom: solid 3px #222222;
+  border-left: solid 3px #222222;
+  padding: 4px 8px;
+  line-height: 72px;
+  color: #222222;
+  text-shadow: 2px 2px white;
+}
+/* コンタクト */
+#contact {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  background-image: url(../image/letter.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: drop-shadow(0 0 10px black);
+  padding: 60px 50px 96px;
+}
+.contents-contact {
+  height: 400px;
+  text-align: center;
+}
+.contents-contact img {
+  width: 160px;
+  height: 160px;
+  opacity: 0.8;
+
+}
+.contents-contact p {
+  font-size: 2.4rem;
+  padding: 40px 0; 
+  color: #fff;
+  text-shadow: 3px 3px #222222;
+}
+
+/* フッター */
+footer {
+  width: 100%;
+  height: 160px;
+  text-align: center;
+  background-image: url(../image/footer-bgc.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+footer p {
+  font-size: 1.6rem;
+  margin: 32px auto 0;
+  letter-spacing: 2px;
+}
+.top-scroll img{
+  width: 64px;
+  height: 64px;
+}
+footer a {
+  font-size: 24px;
+  position: relative;
+  top: 6px;
+  font-family: serif;
+}
+.contact-sns {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 16px;
+}
+.ic_fb img , .ic_tw img{
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 8px;
+}
+

@@ -1,0 +1,85 @@
+@media screen and (max-width: 600px) {
+
+
+#wrapper {
+    display: block;
+    width: 60px;
+    height: 64px;
+    cursor: pointer;
+    position: relative;
+    right: -12%; 
+    margin-top: 8px;
+  }
+  #wrapper span {
+    display: block;
+    position: absolute; /* .navToggleに対して */
+    width: 48px;
+    border-bottom: solid 3px #eee;
+    transform: translateY(100%);/*メニュー上から表示される */
+    left: 6px;
+  }
+  #wrapper span:nth-child(1) {
+    top: 22%;
+  }
+  #wrapper span:nth-child(2) {
+    top: 46%;
+  }
+  #wrapper span:nth-child(3) {
+    top: 72%;
+  }
+  #wrapper.active span:nth-child(1) {
+    top: 50%;
+    left: 6px;
+    transform: rotate(-45deg);
+  }
+
+  /* 2番目と3番目のspanを45度に */
+  #wrapper.active span:nth-child(2),
+  #wrapper.active span:nth-child(3) {
+    top: 50%;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  /* ボタンの中のメニューの内容 */
+nav#humburger {
+  width: 100%;
+  height: 240px;
+  background: #fff;
+  color: #222222;
+  display: none;
+  position: fixed;
+  margin-top: 80px;
+}
+nav#humburger ul {
+  background: #333333;
+  padding: 0;
+  width: 100%;
+}
+nav#humburger ul li {
+  font-size:3.2rem;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  height: 48px;
+  border-bottom: 1px dotted #333;
+}
+nav#humburger ul li:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+nav#humburger ul li a {
+  height: 49px;
+  display: block;
+  color: #eee8aa;
+  font-size: 3.2rem;
+  line-height: 48px;
+  text-decoration: none;
+  border: solid 1px #eee8aa;
+  text-align: center;
+  margin-left: 0;
+}
+.header-content {
+    display: block;
+}
+}
